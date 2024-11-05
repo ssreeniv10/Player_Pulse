@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.field {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background: url('Field_bg.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.batsman {
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.fielder {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.fielder.active {
+    background-color: rgb(255, 80, 80); /* Active state color */
+    transform: scale(1.2); /* Slightly enlarge to indicate activation */
+}
+
+#fielder1 { position:absolute; bottom: 460px; left: 400px; } /* Deep Fine Leg*/
+#fielder2 { position: absolute; bottom: 415px; left: 460px; }/* Deep Backward Square Leg*/
+#fielder3 { position: absolute; bottom: 330px; left: 500px; }/* Deep square Leg*/
+#fielder4 { position:absolute; bottom: 460px; right: 400px; } /* Deep Third Man*/
+#fielder5 { position: absolute; bottom: 415px; right: 460px; }/* Deep Backward Point*/
+#fielder6 { position: absolute; bottom: 330px; right: 500px; }/* Deep Point*/
+#fielder7 { position: absolute; top: 420px; left: 470px; }/* Deep Mid Wicket*/
+#fielder8 { position:absolute; top: 490px; left: 370px; } /* Long On*/
+#fielder9 { position:absolute; top: 490px; right: 370px; } /* Long Off*/
+#fielder10 { position: absolute; top: 420px; right: 470px; }/* Deep Cover*/
+#fielder11 { position: absolute; top: 340px; right: 500px; }/* Deep Extra Cover*/
+#fielder12 { position:absolute; top: 200px; right: 330px; } /* Third Man*/
+#fielder13 { position:absolute; top: 230px; right: 370px; } /* Gully*/
+#fielder14 { position:absolute; top: 256px; right: 392px; } /* Point*/
+#fielder15 { position:absolute; top: 200px; left: 330px; } /* Fine Leg*/
+#fielder16 { position:absolute; top: 230px; left: 370px; } /* Backward Square Leg*/
+#fielder17 { position:absolute; top: 256px; left: 392px; } /* Square Leg*/
+#fielder18 { position:absolute; top: 356px; right: 392px; } /* Cover*/
+#fielder19 { position:absolute; top: 336px; right: 335px; } /* Silly Mid Off*/
+#fielder20 { position:absolute; top: 400px; right: 335px; } /* Mid Off*/
+#fielder21 { position:absolute; top: 356px; left: 392px; } /* Mid Wicket*/
+#fielder22 { position:absolute; top: 336px; left: 335px; } /* Silly Mid On*/
+#fielder23 { position:absolute; top: 400px; left: 335px; } /* Mid On*/
+/* Add CSS positioning for more fielder divs */

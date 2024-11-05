@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="h_style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <h1>Player Pulse</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#review">Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Website</h2>
+            <p>Your journey starts here. Analyse the Cricket Field and be your own coach.</p>
+            <a href="#services" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Player Pulse is a comprehensive platform designed for cricket enthusiasts and analysts, offering in-depth statistics and performance analysis for players across various positions. Users can access a wide range of data, including batting averages, bowling figures, and match performance metrics tailored to specific player roles.</p>
+        <p>The website features an intuitive interface that allows users to compare players, explore historical data, and visualize performance trends through interactive charts and graphs. Whether you're a fan, coach, or player, Player Pulse provides valuable insights to enhance your understanding and engagement with the game of cricket.</p>
+        <p>Stay tuned for the latest updates and analyses as we strive to be your go-to resource for all things cricket!</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Field Placement</h3>
+                <p>Batsman Performance Insights on Player Pulse lets users select a field setup and a batsman to analyze performance metrics like runs scored and strike rates. This tool aids coaches and fans in understanding batting dynamics and making informed decisions.</p>
+                <a href="http://127.0.0.1:5500/index.html" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <h3>Service 2</h3>
+                <p>Details about Service 2.</p>
+            </div>
+            <div class="card">
+                <h3>Service 3</h3>
+                <p>Details about Service 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="review">
+        <h2>Querry and Review</h2>
+        <form action="submit_form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Player Pulse. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
